@@ -1,0 +1,97 @@
+#clearout_setting_form .form-table th {
+	font-weight: 500 !important;
+	width: 270px !important;
+}
+
+.co_plugin_subhead{
+	font-size:15px;
+}
+
+.co_sec_diff{
+	border: 0;
+	border-top: 0.5px solid #f7f7f7;
+}
+
+.sforms-container {
+	display: flex;
+	flex-wrap: wrap;
+	/* background-color: DodgerBlue; */
+}
+
+.sforms-container>div {
+	width: 25%;
+	margin-bottom: 8px;
+	text-align: left;
+	font-size: 14px;
+}
+
+.sforms-container>div>label {
+	vertical-align: top;
+}
+
+
+/* Tooltip container */
+
+.apitoken-tooltip ,.cleraout-input-box-tooltip {
+	color: #c3c3c3;
+	position: relative !important;
+	display: inline-block !important;
+	/* border-bottom: 1px dotted black; If you want dots under the hoverable text */
+}
+
+
+/* Tooltip text */
+
+.apitoken-tooltip .tooltiptext, .cleraout-input-box-tooltip .cleraout-tooltiptext {
+	visibility: hidden;
+	width: 180px;
+	background-color: #555;
+	color: #fff;
+	text-align: left;
+	padding: 5px;
+	border-radius: 6px;
+	/* Position the tooltip text */
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	line-height: 1.3em;
+	margin-left: -60px;
+	/* Fade in tooltip */
+	opacity: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+	transition: opacity 0.3s;
+}
+
+.cleraout-input-box-tooltip .cleraout-tooltiptext {
+	width: 180px;
+	text-align: center;
+}
+
+.apitoken-tooltip .tooltiptext.is_emailtext {
+	width: 300px;
+	margin-left: -100px;
+}
+
+
+/* Tooltip arrow */
+
+.apitoken-tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 33%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.apitoken-tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
